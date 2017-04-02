@@ -4,10 +4,13 @@
     - [ ] add watching to file in order to generate continuously the UML diagram as writing
 
 
-```mermaid
-graph TD;
-    A-->B;
-    A-->C;
-    B-->D;
-    C-->D;
+```plantuml
+@startuml
+
+(First usecase)
+(Another usecase) as (UC2)  
+usecase UC3
+usecase (Last\nusecase) as UC4
+
+@enduml
 ```
